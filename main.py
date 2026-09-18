@@ -48,7 +48,7 @@ def multiply(num1: float, num2: float):
 @app.get("/divide")
 def divide(num1: float, num2: float):
     if num2 == 0:
-        raise HTTPException(status_code=400, detail="num2 cannot be zero")
+        raise HTTPException(status_code=400, detail="You can't divide any number by zero.")
     result = num1 / num2
 
     return {
